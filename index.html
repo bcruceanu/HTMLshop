@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Awesome page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        var myCarousel = document.querySelector('#carouselExampleFade')
+        var carousel = new bootstrap.Carousel(myCarousel)
+    </script>
+    <style>
+        .carousel-item {
+            height: 100%;
+        }
+
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+        ul {
+            list-style: none;
+            display: flex
+        }
+
+        .social-icon {
+            height: 70px;
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 27px;
+            margin-right: 11px;
+            cursor: pointer
+        }
+
+        .social-twitter {
+            background-color: #55acee
+        }
+
+        .social-facebook {
+            background-color: #3b5999
+        }
+
+        .social-linkedin {
+            background-color: #0077B5
+        }
+
+        .social-google {
+            background-color: #dd4b39
+        }
+
+        .social-instagram {
+            background-color: #dd4b39
+        }
+
+        .social-icon i {
+            transition: 0.4s all
+        }
+
+        .social-icon:hover i {
+            transform: scale(1.4)
+        }
+    </style>
+</head>
+
+<body style="background-image: url(script/green_flower_2.jpg);" onload="hideButtons()">
+    <header class="p-3 text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center">
+                    <li>
+                        <a href="index.html" class="btn btn-outline-light me-2">Home</a>
+                        <a href="products.html" class="btn btn-outline-light me-2">Products</a>
+                        <a href="addproduct.html" class="btn btn-outline-light me-2">Add Product</a>
+                    </li>
+                </ul>
+                <div class="text-end">
+                    <button onclick="window.location.href='login.html'" type="button" class="btn btn-outline-light me-2"
+                        id="loginID">Login</button>
+                    <button onclick="window.location.href='register.html'" type="button" class="btn btn-success"
+                        id="registerID">Register</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img style="max-height: 40vh;" src="slideImages/flowersh1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img style="max-height: 40vh;" src="slideImages/flowersh2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item h-100">
+                        <img style="max-height: 40vh;" src="slideImages/flowersh4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-2">
+        <h4 class="bg-white p-3 text-success text-center font-monospace">The Green Leaf Florist</h4>
+        <p class="bg-white p-4 text-success font-monospace" style="text-align: justify;">Here at the green leaf, we
+            believe that each person has the right to make mistakes and that nothing says I'm sorry like a nice
+            expensive bouquet of flowers. This being our guideline, we strive to offer you the best and most expensive
+            way to apologize. If you do not believe us, just check out our beautiful bouquets in the products section.
+        </p>
+        <p class="bg-white p-4 text-success font-monospace" style="text-align: justify;">Also, here at the green leaf,
+            we understand that on that special day nothing brings more joy to the lovely bride than seeing the envy in
+            her girlfriend's eyes when she realizes that her bouquet was not nearly as beautyfull. That is why you
+            should check out our products section and see which one of our bouquets will bring the best desired result.
+        </p>
+    </div>
+
+
+    <div class="d-flex flex-column align-items-center">
+        <h4 class="mb-4 text-white">Follow us</h4>
+        <ul>
+            <li><span class="social-icon social-facebook"><i class="fa fa-facebook"></i></span></li>
+            <li><span class="social-icon social-google"><i class="fa fa-google"></i></span></li>
+            <li><span class="social-icon social-linkedin"><i class="fa fa-linkedin"></i></span></li>
+            <li><span class="social-icon social-instagram"><i class="fa fa-instagram"></i></span></li>
+            <li><span class="social-icon social-twitter"><i class="fa fa-twitter"></i></span></li>
+        </ul>
+    </div>
+
+
+
+
+    <script src="script/user.js"></script>
+    <script src="script/userService.js"></script>
+    <script src="script/product.js"></script>
+    <script src="script/productService.js"></script>
+    <script src="script/script.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script> -->
+
+
+</body>
+
+</html>

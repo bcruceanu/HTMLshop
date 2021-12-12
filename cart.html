@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome products</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<!-- aceste functii se apeleaza atunci cand se deschide pagina  -->
+<body onload="showCartCount(), showCartProducts(), showFullPrice(), hideButtons()" style="background-image: url(script/green_flower_2.jpg);">
+    
+    <header class="p-3 text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center">
+                    <li>
+                        <a href="index.html" class="btn btn-outline-light me-2">Home</a>
+                        <a href="products.html" class="btn btn-outline-light me-2">Products</a>
+                    </li>
+                </ul>
+                <div class="text-end">
+                    <button onclick="window.location.href='cart.html'" type="button" class="btn btn-outline-success me-2">Cart Items</button>
+                    <button onclick="window.location.href='login.html'" type="button" class="btn btn-outline-light me-2" id="loginID">Login</button>
+                    <button onclick="window.location.href='register.html'" type="button" class="btn btn-outline-success" id="registerID">Register</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container bg-white">
+        <div class="row">
+            <h3 id="cartProductCount" class="p-2 mb-3"> 
+               <!-- this is where we count the products in the cart  -->
+            </h3>
+        </div>
+        <div class="row">
+            <div class="col mb-3" id="cartProducts">
+                <!-- cart products go here -->
+            </div>
+        </div>
+        <div class="row">
+            <div id="totalPrice" class="col mb-3">
+                <!-- total price goes here -->
+            </div>   
+        </div>
+        <div class="row">
+            <button onclick="products1.deleteProductsFromCart()" class="btn btn-outline-success m-3" style="max-width: fit-content;">Delete Cart</button> 
+            <button class="btn btn-outline-success m-3" style="max-width: fit-content;" onclick="checkOut()">Checkout</button>  
+        </div>
+    </div>
+
+    <script src="script/user.js"></script>
+    <script src="script/product.js"></script>
+    <script src="script/userService.js"></script>
+    <script src="script/productService.js"></script>
+    <script src="script/commonService.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>
